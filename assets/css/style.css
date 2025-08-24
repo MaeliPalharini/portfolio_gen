@@ -1,3 +1,4 @@
+/* Reset e Variáveis */
 * {
     margin: 0;
     padding: 0;
@@ -76,22 +77,26 @@ nav a {
 
 nav a:hover {
     color: var(--purple-200);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #about article {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
 }
 
 #about img {
     width: 200px;
     flex-shrink: 0;
+    border-radius: 70px;
 }
 
-#about p {
-    flex: 1;
+#about .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
 }
 
 #video figure {
@@ -99,7 +104,7 @@ nav a:hover {
     justify-content: center;
 }
 
-footer {
+footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -123,22 +128,29 @@ footer img {
     width: 2rem;
     height: 2rem;
     display: block;
-    filter: brightness(0) invert(1);
-    transition: transform 0.2s ease, filter 0.2s ease;
-    cursor: pointer;
+    filter: invert(100%);
+    transition: filter 0.3s;
 }
 
 footer img:hover {
-    transform: scale(1.1);
-    filter: brightness(0) invert(0.6);
+    filter: brightness(0)
+    saturate(100%)
+    invert(65%)
+    sepia(59%)
+    saturate(2437%)
+    hue-rotate(213deg)
+    brightness(86%)
+    contrast(88%);
 }
 
 .main_contato {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 5rem;
     width: 90%;
     margin: 2rem auto;
+    padding-top: 100px;
+    padding-bottom: 178px;
 }
 
 form {
@@ -149,22 +161,12 @@ form {
     border-radius: 0.75rem;
 }
 
-form input,
-form textarea {
+form input, textarea {
     padding: 0.5rem;
     border-radius: 0.75rem;
     border: none;
-    outline: none;
     font-size: 1rem;
-    background: var(--white);
 }
-
-form input:focus,
-form textarea:focus {
-    outline: none;
-    border: none;
-}
-
 
 textarea {
     resize: none;
@@ -185,30 +187,34 @@ form button:hover {
     background: var(--purple-500);
 }
 
-form span {
+form span{
     color: #ff0000;
     font-size: 0.75rem;
 }
 
-.article_mapa{
-    background:#fff;
-    border-radius:16px;
-    padding:24px;
-    box-shadow:0 6px 16px rgba(0,0,0,.10);
-    max-width:640px;
+.article_mapa {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.article_mapa .addr{ font-style:normal; margin-bottom:12px; }
-.article_mapa .addr p{ margin:0; line-height:1.4; }
+.mapa_conteudo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 
+.mapa_conteudo iframe {
+    flex: 2;
+    border-radius: 0.5rem;
+    border: none;
+}
 
-.map{
-    display:block;
-    width:100%;
-    aspect-ratio: 16 / 9;
-    height:auto;
-    min-height:360px;
-    border:0;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,.12);
+.mapa_endereco {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5;
 }

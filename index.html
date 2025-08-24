@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projeto Portfólio" />
-    <meta name="author" content="Generation Brasil" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.png" />
-    <link rel="stylesheet" href="/styles.css"/>
-    <title>Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portfólio">
+    <meta name="author" content="Maeli palharini">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.png"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Meu Perfil</title>
 </head>
+
 <body>
+
 <header>
+
     <h1>Maeli Palharini</h1>
-    <nav aria-label="Navegação principal">
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="contato.html" aria-current="page">Contato</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
+
 </header>
-
-<main class="main_contato" id="contato">
-
-    <form action="#" method="post" id="formulario" novalidate>
-        <label for="nome">Nome:</label>
-        <input id="nome" type="text" name="name"/>
-        <span id="errNome" role="alert" aria-live="polite"></span>
-
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email"/>
-        <span id="errEmail" role="alert" aria-live="polite"></span>
-
-        <label for="subject">Assunto:</label>
-        <input id="subject" type="text" name="subject"/>
-        <span id="errSubject" role="alert" aria-live="polite"></span>
-
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <article class="article_mapa">
-        <address class="addr">
-            <p><strong>Praça da República</strong><br>São Paulo - SP</p>
-        </address>
-
-        <iframe
-                class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.3210989871486!2d-46.64513862543904!3d-23.54327306092645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce591fcf05555b%3A0x5527c6d04a85f0c1!2zUHJhw6dhIGRhIFJlcMO6YmxpY2E!5e1!3m2!1spt-BR!2sbr!4v1755736453359!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen>
-        </iframe>
-    </article>
+<main>
+    <section id="about">
+        <h2>Sobre mim</h2>
+        <article>
+            <img src="./assets/img/eu.jpeg" alt="Foto do criador desse conteúdo" />
+            <div class="bio">
+                <p>
+                    Minha trajetória profissional começou na área ambiental, onde me formei em Engenharia Florestal pela
+                    UFRA e concluí um mestrado em Agroecologia e Desenvolvimento Sustentável na UFSCar. Durante esse período,
+                    desenvolvi uma forte base analítica, senso de responsabilidade e organização. No entanto, foi ao atuar
+                    como professora de Tecnologia e Inovação em escolas públicas que descobri minha paixão por ensinar,
+                    resolver problemas de forma criativa e utilizar a tecnologia como ferramenta de transformação.
+                    Essa experiência me conectou com o universo da programação e impulsionou minha decisão de fazer
+                    uma transição de carreira para a área de tecnologia.
+                </p>
+                <p>
+                Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e me dedicando ao desenvolvimento
+                backend com foco em <strong>Java e Spring Boot </strong>, além de trabalhar com tecnologias como <strong>JavaScript, TypeScript,
+                Node.js, HTML, CSS e SQL</strong>.
+                Tenho participado de projetos pessoais e voluntários que aliam código limpo,
+                boas práticas e impacto social, como no Projeto Glicare e na criação do site PetMatch.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section id="video">
+        <h2>Meu vídeo favorito:</h2>
+        <figure>
+            <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/a1IBpsuCI14"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+            ></iframe>
+        </figure>
+    </section>
 </main>
-
 <footer>
-    <section aria-label="Redes sociais">
-        <a href="#" aria-label="LinkedIn">
-            <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+    <section>
+        <a href="">
+            <img src="assets/img/linkedin.svg" alt="LinkedIn"/>
         </a>
-        <a href="#" aria-label="GitHub">
-            <img src="assets/img/github.svg" alt="GitHub" />
+        <a href="">
+            <img src="assets/img/github.svg" alt="Github"/>
         </a>
-        <a href="#" aria-label="Instagram">
+        <a href="">
             <img src="assets/img/instagram.svg" alt="Instagram" />
         </a>
     </section>
-
-    <h3>Feito com 🧡 por Maeli Palharini - 2025</h3>
+    <h3>
+        Feito com 🧡 por Maeli Palharini - 2025
+    </h3>
 </footer>
 </body>
 </html>

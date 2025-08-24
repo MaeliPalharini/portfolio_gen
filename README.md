@@ -4,7 +4,7 @@ Este repositório contém uma página de portfólio desenvolvida como parte da a
 O objetivo é praticar HTML, CSS e conceitos básicos de acessibilidade e responsividade na construção de páginas estáticas.
 
 ## 🖼️ Prévia
-![img.png](img.png)
+![img.png](assets/img/img.png)
 
 
 ## 🚀 Tecnologias utilizadas
