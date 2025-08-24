@@ -3,10 +3,6 @@
 Este repositório contém uma página de portfólio desenvolvida como parte da atividade Fundamentos da Web do bootcamp da Generation Brasil.
 O objetivo é praticar HTML, CSS e conceitos básicos de acessibilidade e responsividade na construção de páginas estáticas.
 
-## 🖼️ Prévia
-![img.png](assets/img/img.png)
-
-
 ## 🚀 Tecnologias utilizadas
 
 - HTML5 – estrutura semântica da página
